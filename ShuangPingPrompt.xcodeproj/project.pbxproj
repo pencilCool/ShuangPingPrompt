@@ -13,7 +13,37 @@
 		C4F6FE952BA3340900B2E67A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F6FE932BA3340900B2E67A /* Main.storyboard */; };
 		C4F6FE972BA3340D00B2E67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F6FE962BA3340D00B2E67A /* Assets.xcassets */; };
 		C4F6FE9A2BA3340D00B2E67A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F6FE982BA3340D00B2E67A /* LaunchScreen.storyboard */; };
+		C4F6FEA82BA335BC00B2E67A /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F6FEA72BA335BC00B2E67A /* KeyboardViewController.swift */; };
+		C4F6FEAC2BA335BC00B2E67A /* XiaoHe.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4F6FEA52BA335BC00B2E67A /* XiaoHe.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4F6FEB52BA3384500B2E67A /* XiaoHeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F6FEB42BA3384500B2E67A /* XiaoHeView.xib */; };
+		C4F6FEB62BA3384500B2E67A /* XiaoHeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4F6FEB42BA3384500B2E67A /* XiaoHeView.xib */; };
+		C4F6FEB82BA3387100B2E67A /* XiaoHeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F6FEB72BA3387100B2E67A /* XiaoHeView.swift */; };
+		C4F6FEB92BA3387100B2E67A /* XiaoHeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F6FEB72BA3387100B2E67A /* XiaoHeView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4F6FEAA2BA335BC00B2E67A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F6FE822BA3340900B2E67A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F6FEA42BA335BC00B2E67A;
+			remoteInfo = XiaoHe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4F6FEB02BA335BC00B2E67A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4F6FEAC2BA335BC00B2E67A /* XiaoHe.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C4F6FE8A2BA3340900B2E67A /* ShuangPingPrompt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuangPingPrompt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +54,22 @@
 		C4F6FE962BA3340D00B2E67A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4F6FE992BA3340D00B2E67A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4F6FE9B2BA3340D00B2E67A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F6FEA52BA335BC00B2E67A /* XiaoHe.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XiaoHe.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F6FEA72BA335BC00B2E67A /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		C4F6FEA92BA335BC00B2E67A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F6FEB42BA3384500B2E67A /* XiaoHeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XiaoHeView.xib; sourceTree = "<group>"; };
+		C4F6FEB72BA3387100B2E67A /* XiaoHeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiaoHeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C4F6FE872BA3340900B2E67A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F6FEA22BA335BC00B2E67A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C4F6FE8C2BA3340900B2E67A /* ShuangPingPrompt */,
+				C4F6FEA62BA335BC00B2E67A /* XiaoHe */,
 				C4F6FE8B2BA3340900B2E67A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C4F6FE8A2BA3340900B2E67A /* ShuangPingPrompt.app */,
+				C4F6FEA52BA335BC00B2E67A /* XiaoHe.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +103,31 @@
 				C4F6FE8D2BA3340900B2E67A /* AppDelegate.swift */,
 				C4F6FE8F2BA3340900B2E67A /* SceneDelegate.swift */,
 				C4F6FE912BA3340900B2E67A /* ViewController.swift */,
+				C4F6FEBA2BA3387F00B2E67A /* keyborad */,
 				C4F6FE932BA3340900B2E67A /* Main.storyboard */,
 				C4F6FE962BA3340D00B2E67A /* Assets.xcassets */,
 				C4F6FE982BA3340D00B2E67A /* LaunchScreen.storyboard */,
 				C4F6FE9B2BA3340D00B2E67A /* Info.plist */,
 			);
 			path = ShuangPingPrompt;
+			sourceTree = "<group>";
+		};
+		C4F6FEA62BA335BC00B2E67A /* XiaoHe */ = {
+			isa = PBXGroup;
+			children = (
+				C4F6FEA72BA335BC00B2E67A /* KeyboardViewController.swift */,
+				C4F6FEA92BA335BC00B2E67A /* Info.plist */,
+			);
+			path = XiaoHe;
+			sourceTree = "<group>";
+		};
+		C4F6FEBA2BA3387F00B2E67A /* keyborad */ = {
+			isa = PBXGroup;
+			children = (
+				C4F6FEB72BA3387100B2E67A /* XiaoHeView.swift */,
+				C4F6FEB42BA3384500B2E67A /* XiaoHeView.xib */,
+			);
+			path = keyborad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +140,34 @@
 				C4F6FE862BA3340900B2E67A /* Sources */,
 				C4F6FE872BA3340900B2E67A /* Frameworks */,
 				C4F6FE882BA3340900B2E67A /* Resources */,
+				C4F6FEB02BA335BC00B2E67A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4F6FEAB2BA335BC00B2E67A /* PBXTargetDependency */,
 			);
 			name = ShuangPingPrompt;
 			productName = ShuangPingPrompt;
 			productReference = C4F6FE8A2BA3340900B2E67A /* ShuangPingPrompt.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C4F6FEA42BA335BC00B2E67A /* XiaoHe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F6FEAD2BA335BC00B2E67A /* Build configuration list for PBXNativeTarget "XiaoHe" */;
+			buildPhases = (
+				C4F6FEA12BA335BC00B2E67A /* Sources */,
+				C4F6FEA22BA335BC00B2E67A /* Frameworks */,
+				C4F6FEA32BA335BC00B2E67A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XiaoHe;
+			productName = XiaoHe;
+			productReference = C4F6FEA52BA335BC00B2E67A /* XiaoHe.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +180,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					C4F6FE892BA3340900B2E67A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					C4F6FEA42BA335BC00B2E67A = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -116,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				C4F6FE892BA3340900B2E67A /* ShuangPingPrompt */,
+				C4F6FEA42BA335BC00B2E67A /* XiaoHe */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +211,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F6FEB52BA3384500B2E67A /* XiaoHeView.xib in Resources */,
 				C4F6FE9A2BA3340D00B2E67A /* LaunchScreen.storyboard in Resources */,
 				C4F6FE972BA3340D00B2E67A /* Assets.xcassets in Resources */,
 				C4F6FE952BA3340900B2E67A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F6FEA32BA335BC00B2E67A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F6FEB62BA3384500B2E67A /* XiaoHeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,13 +233,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F6FEB82BA3387100B2E67A /* XiaoHeView.swift in Sources */,
 				C4F6FE922BA3340900B2E67A /* ViewController.swift in Sources */,
 				C4F6FE8E2BA3340900B2E67A /* AppDelegate.swift in Sources */,
 				C4F6FE902BA3340900B2E67A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4F6FEA12BA335BC00B2E67A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F6FEB92BA3387100B2E67A /* XiaoHeView.swift in Sources */,
+				C4F6FEA82BA335BC00B2E67A /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4F6FEAB2BA335BC00B2E67A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4F6FEA42BA335BC00B2E67A /* XiaoHe */;
+			targetProxy = C4F6FEAA2BA335BC00B2E67A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C4F6FE932BA3340900B2E67A /* Main.storyboard */ = {
@@ -218,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -288,6 +401,7 @@
 		C4F6FE9F2BA3340D00B2E67A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +414,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +431,7 @@
 		C4F6FEA02BA3340D00B2E67A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +444,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +452,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosdemo.ShuangPingPrompt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4F6FEAE2BA335BC00B2E67A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WN86XXW7R7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XiaoHe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XiaoHe;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdemo.ShuangPingPrompt.XiaoHe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4F6FEAF2BA335BC00B2E67A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WN86XXW7R7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XiaoHe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XiaoHe;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdemo.ShuangPingPrompt.XiaoHe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +527,15 @@
 			buildConfigurations = (
 				C4F6FE9F2BA3340D00B2E67A /* Debug */,
 				C4F6FEA02BA3340D00B2E67A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F6FEAD2BA335BC00B2E67A /* Build configuration list for PBXNativeTarget "XiaoHe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F6FEAE2BA335BC00B2E67A /* Debug */,
+				C4F6FEAF2BA335BC00B2E67A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
