@@ -10,19 +10,32 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
+   
+    var xiaoHeView: UIImageView!
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
-        
-        // Add custom view sizing constraints here
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        xiaoHeView =  UIImageView()
+        xiaoHeView.image =  UIImage(named: "xiaohe")
+        guard let inputView = inputView else { return }
+        inputView.addSubview(xiaoHeView)
+        xiaoHeView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            xiaoHeView.leftAnchor.constraint(equalTo: inputView.leftAnchor),
+            xiaoHeView.topAnchor.constraint(equalTo: inputView.topAnchor),
+            xiaoHeView.rightAnchor.constraint(equalTo: inputView.rightAnchor),
+            xiaoHeView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor),
+            
+            xiaoHeView.heightAnchor.constraint(equalToConstant: 200)
+          ])
+
         
-        // Perform custom UI setup here
         self.nextKeyboardButton = UIButton(type: .system)
-        
         self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
         self.nextKeyboardButton.sizeToFit()
         self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
